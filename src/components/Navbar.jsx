@@ -3,7 +3,7 @@ import coin from '../assets/coin.png'
 
 export default function Navbar() {
     return (
-        <div className="flex justify-between items-center mt-6 mb-4">
+        <div className="flex justify-between items-center my-6">
             <div>
                 <img src={logo} alt="" />
             </div>

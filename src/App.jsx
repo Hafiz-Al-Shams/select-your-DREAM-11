@@ -1,5 +1,6 @@
 import Banner from "./components/Banner"
 import Navbar from "./components/Navbar"
+import Newsletter from "./components/Newsletter"
 
 function App() {
 
@@ -10,6 +11,9 @@ function App() {
         <Navbar></Navbar>
         {/* banner */}
         <Banner></Banner>
+
+        {/* newsletter */}
+        <Newsletter></Newsletter>
       </div>
     </>
   )
