@@ -1,0 +1,102 @@
+[
+    {
+        "playerId": 1,
+        "name": "Travis Head",
+        "country": "Australia",
+        "role": "Batsman",
+        "battingType": "Left-hand bat",
+        "bowlingType": "Right-arm off-break",
+        "biddingPrice": 2000000,
+        "image": "https://i.ibb.co.com/84mn6ps/maxresdefault.jpg"
+    },
+    {
+        "playerId": 2,
+        "name": "Mitchell Starc",
+        "country": "Australia",
+        "role": "Bowler",
+        "battingType": "Left-hand bat",
+        "bowlingType": "Left-arm fast",
+        "biddingPrice": 2200000,
+        "image": "https://i.ibb.co.com/bQDj8VL/mitchell-starc-biography-21-06-2024.jpg"
+    },
+    {
+        "playerId": 3,
+        "name": "Anrich Nortje",
+        "country": "South Africa",
+        "role": "Bowler",
+        "battingType": "Right-hand bat",
+        "bowlingType": "Right-arm fast",
+        "biddingPrice": 1800000,
+        "image": "https://i.ibb.co.com/fXRr2R6/78408-1719018146.jpg"
+    },
+    {
+        "playerId": 4,
+        "name": "Quinton de Kock",
+        "country": "South Africa",
+        "role": "Wicketkeeper-Batsman",
+        "battingType": "Left-hand bat",
+        "bowlingType": "N/A",
+        "biddingPrice": 1500000,
+        "image": "https://i.ibb.co.com/s3XxvGt/cri4v9krgg1umxzr0klf.jpg"
+    },
+    {
+        "playerId": 5,
+        "name": "Kagiso Rabada",
+        "country": "South Africa",
+        "role": "Bowler",
+        "battingType": "Left-hand bat",
+        "bowlingType": "Right-arm fast",
+        "biddingPrice": 1900000,
+        "image": "https://i.ibb.co.com/mhCW6yr/kagiso-rabada-bowling-ap-2024-06-2ae391f8b83c933646372deb3df1d3ff-3x2.webp"
+    },
+    {
+        "playerId": 6,
+        "name": "Kane Williamson",
+        "country": "New Zealand",
+        "role": "Batsman",
+        "battingType": "Right-hand bat",
+        "bowlingType": "Right-arm off-break",
+        "biddingPrice": 2000000,
+        "image": "https://i.ibb.co.com/xYTbmbN/Kane-Williamson.webp"
+    },
+    {
+        "playerId": 7,
+        "name": "Devon Conway",
+        "country": "New Zealand",
+        "role": "Batsman",
+        "battingType": "Left-hand bat",
+        "bowlingType": "N/A",
+        "biddingPrice": 1800000,
+        "image": "https://i.ibb.co.com/61BHmBK/New-Zealand-s-Devon-Conway-185a21385c4-large-1-jpg.webp"
+    },
+    {
+        "playerId": 8,
+        "name": "Mitchell Santner",
+        "country": "New Zealand",
+        "role": "All-rounder",
+        "battingType": "Left-hand bat",
+        "bowlingType": "Left-arm orthodox spin",
+        "biddingPrice": 1600000,
+        "image": "https://i.ibb.co.com/0K6yCNF/120722-santner-getty.jpg"
+    },
+    {
+        "playerId": 9,
+        "name": "Marnus Labuschagne",
+        "country": "Australia",
+        "role": "Batsman",
+        "battingType": "Right-hand bat",
+        "bowlingType": "Right-arm leg-break",
+        "biddingPrice": 1400000,
+        "image": "https://i.ibb.co.com/kJJyjgG/Marnus-Labuschagne-g0s-Hm0.jpg"
+    },
+    {
+        "playerId": 10,
+        "name": "Trent Boult",
+        "country": "New Zealand",
+        "role": "Bowler",
+        "battingType": "Left-hand bat",
+        "bowlingType": "Left-arm fast-medium",
+        "biddingPrice": 1900000,
+        "image": "https://i.ibb.co.com/pbtgPx1/boult.png"
+    }
+]

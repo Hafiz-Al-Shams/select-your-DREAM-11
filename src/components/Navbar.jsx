@@ -1,7 +1,9 @@
+import PropTypes from 'prop-types';
 import logo from '../assets/logo.png'
 import coin from '../assets/coin.png'
 
 export default function Navbar({ balance }) {
+
 
 
 
@@ -23,4 +25,8 @@ export default function Navbar({ balance }) {
             </div>
         </div>
     )
+}
+
+Navbar.propTypes = {
+    balance: PropTypes.number
 }

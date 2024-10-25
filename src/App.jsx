@@ -3,6 +3,8 @@ import Banner from "./components/Banner"
 import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
 import Newsletter from "./components/Newsletter"
+import Available from "./components/Available"
+import Players from "./components/Players"
 
 function App() {
 
@@ -22,6 +24,11 @@ function App() {
           <Navbar balance={balance}></Navbar>
           {/* banner */}
           <Banner handleAddBalance={handleAddBalance}></Banner>
+
+          <Available></Available>
+
+          {/* player cards */}
+          <Players></Players>
 
           {/* newsletter */}
           <Newsletter></Newsletter>
