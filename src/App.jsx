@@ -10,8 +10,22 @@ function App() {
 
   const [balance, setBalance] = useState(0);
 
+  const [selected, setSelected] = useState([]);
+
   const handleAddBalance = () => {
     setBalance(balance + 2500000);
+  }
+
+  const handleReduceBalance = (price, player) => {
+    if (balance > price && selected.length < 6) {
+      setBalance(balance - price);
+      setSelected([...selected, player]);
+    }
+    else {
+      alert('operation failed!!');
+    }
+
+    // console.log(selected);
   }
 
 
@@ -25,10 +39,10 @@ function App() {
           {/* banner */}
           <Banner handleAddBalance={handleAddBalance}></Banner>
 
-          <Available></Available>
+          <Available selected={selected}></Available>
 
           {/* player cards */}
-          <Players></Players>
+          <Players handleReduceBalance={handleReduceBalance}></Players>
 
           {/* newsletter */}
           <Newsletter></Newsletter>
