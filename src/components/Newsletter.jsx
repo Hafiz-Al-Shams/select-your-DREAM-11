@@ -1,10 +1,11 @@
+import PropTypes from 'prop-types';
 import background from '../assets/bg-shadow.png'
 
-export default function Newsletter() {
+export default function Newsletter({ isActive }) {
 
     return (
-        <div className='mt-96 mb-10'>
-            <div className='border-2 bg-cover bg-no-repeat rounded-2xl w-full py-20 text-center space-y-2.5' style={{ backgroundImage: `url(${background})` }}>
+        <div className={`${isActive.available ? 'mt-28' : 'mt-40'} mb-8`}>
+            <div className='border-2 bg-cover bg-no-repeat rounded-2xl w-full py-20 text-center space-y-2.5' style={{ backgroundImage: `url(${background})`, background: 'linear-gradient(90deg, #e0f4fc, #f7e3e7, #ffddb0)', borderRadius: '10px', padding: '20px', marginBottom: '40px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', color: '#333' }}>
                 <h1 className='text-3xl font-bold'>Subscribe to our Newsletter</h1>
                 <h4 className='text-lg font-semibold text-gray-500'>Get the latest updates and news right in your inbox!</h4>
                 <div className='pt-3'>
@@ -14,4 +15,8 @@ export default function Newsletter() {
             </div>
         </div>
     )
+}
+
+Newsletter.propTypes = {
+    isActive: PropTypes.object
 }

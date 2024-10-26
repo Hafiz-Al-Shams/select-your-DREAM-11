@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useEffect, useState } from "react"
 
-export default function Players({ handleReduceBalance }) {
+export default function Players({ handleReduceBalance, isActive }) {
 
     const [players, setPlayers] = useState([]);
 
@@ -13,7 +13,7 @@ export default function Players({ handleReduceBalance }) {
 
 
     return (
-        <div className="grid grid-cols-3 gap-6">
+        <div className={`${isActive.status === 'available' ? 'grid' : 'hidden'} grid-cols-3 gap-6`}>
             {
                 players.map(player => (
                     <div key={player.playerId} className="card card-compact bg-base-100 shadow-xl border-2">
@@ -58,5 +58,6 @@ export default function Players({ handleReduceBalance }) {
 }
 
 Players.propTypes = {
-    handleReduceBalance: PropTypes.func
+    handleReduceBalance: PropTypes.func,
+    isActive: PropTypes.object
 }
