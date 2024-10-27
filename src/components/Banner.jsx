@@ -4,7 +4,6 @@ import banner from '../assets/banner-main.png'
 
 export default function Banner({ handleAddBalance }) {
 
-
     return (
         <div className='bg-cover bg-no-repeat rounded-2xl w-full py-14 text-center space-y-5 bg-black' style={{ backgroundImage: `url(${background})` }}>
             <div className='flex justify-center items-center'>

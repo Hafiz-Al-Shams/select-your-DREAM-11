@@ -3,11 +3,6 @@ import './Available/Available.css'
 
 export default function Selected({ isActive, selected, handleIsActiveState, handleReduceSelected }) {
 
-
-
-
-
-
     return (
         <div className={`${isActive.status === 'available' ? 'hidden' : ''}`}>
             {
@@ -23,7 +18,8 @@ export default function Selected({ isActive, selected, handleIsActiveState, hand
                         </div>
                         <div><img onClick={() => { handleReduceSelected(player, player.playerId) }} className='w-11 pr-4 hover:cursor-pointer' src="https://img.icons8.com/?size=48&id=102550&format=png" alt="" /></div>
                     </div>
-                ))}
+                ))
+            }
             <div>
                 <button onClick={() => { handleIsActiveState('available') }} className={`mt-5 ml-4 active btn border-2 text-black border-gray-50 p-4 rounded-xl font-bold hover:text-gray-500`}>Add More Player</button>
             </div>

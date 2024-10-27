@@ -12,17 +12,13 @@ import Available from "./components/Available/Available"
 import Players from "./components/Players"
 import Selected from "./components/Selected"
 
-function App() {
 
+function App() {
 
   const [isActive, setIsActive] = useState({
     available: true,
     status: 'available'
   })
-
-
-
-
 
   const handleIsActiveState = (status) => {
     if (status === 'available') {
@@ -40,25 +36,18 @@ function App() {
   }
 
 
-
-
-
-
-
-
-
-
   const [balance, setBalance] = useState(0);
 
   const [selected, setSelected] = useState([]);
 
+
   const handleAddBalance = () => {
-    setBalance(balance + 2500000);
+    setBalance(balance + 2000000);
   }
+
 
   const handleReduceBalance = (price, player) => {
     if (balance >= price && selected.length < 6) {
-
       if (selected.find(randomPlayer => randomPlayer.playerId === player.playerId)) {
         toast.warn(`${player.name} already selected`, {
           position: "top-center",
@@ -87,10 +76,8 @@ function App() {
         });
       }
 
-
     }
     else {
-
       toast.error('OPERATION FAILED!!', {
         position: "top-center",
         autoClose: 3000,
@@ -101,9 +88,7 @@ function App() {
         progress: undefined,
         theme: "dark",
       });
-
     }
-
   }
 
 
@@ -123,9 +108,6 @@ function App() {
   }
 
 
-
-
-
   return (
     <>
       <div className="">
@@ -134,20 +116,18 @@ function App() {
           <Navbar balance={balance}></Navbar>
           {/* banner */}
           <Banner handleAddBalance={handleAddBalance}></Banner>
-
           <Available selected={selected} handleIsActiveState={handleIsActiveState} isActive={isActive}></Available>
-
           {/* selected players */}
           <Selected handleReduceSelected={handleReduceSelected} isActive={isActive} selected={selected} handleIsActiveState={handleIsActiveState}></Selected>
-
           {/* player cards */}
           <Players handleReduceBalance={handleReduceBalance} isActive={isActive}></Players>
-
+        </div>
+        <div className={`relative mt-80`}>
           {/* newsletter */}
           <Newsletter isActive={isActive}></Newsletter>
+          {/* footer */}
+          <Footer></Footer>
         </div>
-        {/* footer */}
-        <Footer></Footer>
         <ToastContainer />
       </div>
     </>

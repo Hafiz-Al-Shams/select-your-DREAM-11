@@ -2,7 +2,7 @@ import logo from '../assets/logo-footer.png'
 
 export default function Footer() {
     return (
-        <div className="py-9" style={{ background: 'rgb(6, 9, 26)' }}>
+        <div className="pt-40 pb-9" style={{ background: 'rgb(6, 9, 26)' }}>
             <div className='flex justify-center items-center py-10'><img src={logo} alt="" /></div>
             <div className='grid grid-cols-3 gap-10 w-10/12 mx-auto py-10'>
                 <div>
@@ -22,8 +22,10 @@ export default function Footer() {
                     <h5 className='text-white text-lg pb-3'>Subscribe</h5>
                     <p className='text-gray-500 text-sm'>Subscribe to our newsletter for the <br /> latest updates.</p>
                     <div className='pt-6'>
-                        <input type="text" placeholder="Enter your email" className="input input-bordered" />
-                        <button className='btn p-4 rounded-lg font-bold ml-1 bg-orange-300 border border-gray-400'>Subscribe</button>
+                        <div className="join">
+                            <input className="input input-bordered join-item" placeholder="Enter your email" />
+                            <button className="btn join-item rounded-r-lg text-black bg-orange-300 font-semibold">Subscribe</button>
+                        </div>
                     </div>
                 </div>
             </div>

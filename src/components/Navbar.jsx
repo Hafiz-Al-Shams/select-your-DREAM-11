@@ -4,10 +4,6 @@ import coin from '../assets/coin.png'
 
 export default function Navbar({ balance }) {
 
-
-
-
-
     return (
         <div className="flex justify-between items-center my-6">
             <div>

@@ -52,7 +52,8 @@ export default function Players({ handleReduceBalance, isActive }) {
                             </div>
                         </div>
                     </div>
-                ))}
+                ))
+            }
         </div>
     )
 }
